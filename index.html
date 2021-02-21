@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.68.3" />
+    <meta charset="utf-8">
+<title>POST</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/slides_bios/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/slides_bios/reveal-js/css/reveal.css"><link rel="stylesheet" href="/slides_bios/robot-lung.css" id="theme"><link rel="stylesheet" href="/slides_bios/highlight-js/color-brewer.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h1 id="heading">🧰</h1>
+<h1 id="post--bios">Post &amp; BIOS</h1>
+<p>🖥️ Organização e Manutenção de Computadores</p>
+<p><a href="https://jp-guimaraes.github.io/">🌐 João Paulo Guimarães</a></p>
+</section>
+
+  
+
+    <section>
+
+<section data-shortcode-section>
+<h1 id="objetivos">Objetivos</h1>
+<p>Entender a sequência de inicialização do computador</p>
+</section><section>
+<h1 id="sumário">Sumário</h1>
+<ol>
+<li>Sequencia de inicialização</li>
+<li>POST</li>
+<li>BIOS</li>
+</ol>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="sequência-de-inicialização-do-computador">Sequência de inicialização do computador</h1>
+</section><section>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<ol>
+<li>Energia na tomada</li>
+<li>Cabo de energia</li>
+<li>Equipamento entre o computador e a tomada</li>
+</ol>
+<p><strong>Desktop</strong></p>
+<p><strong>Laptop</strong></p>
+</section><section>
+<h1 id="desktop">Desktop</h1>
+<ol>
+<li>Fonte</li>
+<li>Botão ON/OFF</li>
+<li>Cabo botão ON/OFF</li>
+<li>Conector placa-mãe</li>
+</ol>
+<p><strong>Sínal de vídeo</strong></p>
+</section><section>
+<h1 id="algoritmo">Algoritmo</h1>
+<ol>
+<li>Usuário aperta o botão de power no gabinete</li>
+</ol>
+<p><img src="http://fab.academany.org/2018/labs/fablaboulu/students/ari-vuokila/images/Week16/Button.png" alt=""></p>
+<p>Curto (contato) entre os dois fios.</p>
+</section><section>
+<h1 id="algoritmo-1">Algoritmo</h1>
+<ol start="2">
+<li>Placa-mãe processa entrada e manda mensagem</li>
+</ol>
+<p><img src="https://www.intel.com/content/dam/support/us/en/images/motherboards/desktop/sb/img/fp_header.jpg" alt="">    <img src="https://i.stack.imgur.com/1RfLi.jpg" alt=""></p>
+<p>(conexão do painel frontal ao botão)</p>
+</section><section>
+<ol start="3">
+<li>Placa-mãe envia sinal a fonte, requisitando alimentação</li>
+</ol>
+<p><img src="https://www.smpspowersupply.com/connector_atx_pinout.GIF" alt=""></p>
+<img src="https://i.stack.imgur.com/O8mMO.jpg" alt="drawing" width="200"/>
+</section><section>
+<ol start="4">
+<li>Fonte atinge tensões de regime, sinaliza FLAG do PWR_OK</li>
+</ol>
+<p><img src="https://lh3.googleusercontent.com/tEkBRaoHCS899VfE7MJ0Nmkmy0ALADRFKYeIUyda0qh9a7x1Wgs8ZLMmboLQtkV-qlr0cZGMTvGVJcJ4CpxTvvExtp73G6hDviGgIr0SYvNJNCELrmSQXa1obw" alt=""></p>
+<img src="https://www.smpspowersupply.com/connector_atx_pinout.GIF" width="400"/>
+</section><section>
+<ol start="5">
+<li>Procedimentos iniciais da placa-mãe</li>
+</ol>
+<ul>
+<li>Energia disponibilizada para a placae periféricos</li>
+<li>Leds e coolers energizados (retorno visual, sonoro)</li>
+<li><strong>Sinal de vídeo</strong></li>
+</ul>
+</section><section>
+<h1 id="laptop">Laptop</h1>
+<ol>
+<li>Fonte (bateria)</li>
+<li>Conector (trilha) do botão para placa</li>
+</ol>
+<p><strong>Sinal de vídeo</strong></p>
+</section><section>
+<h1 id="sinal-de-vídeo">Sinal de vídeo</h1>
+<p>&ldquo;dar tela&rdquo;</p>
+<p>&ldquo;posting&rdquo;</p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="post">POST</h1>
+<p><strong>P</strong>ower-<strong>o</strong>n <strong>s</strong>elf-<strong>t</strong>est</p>
+<p>Auto teste de inicialização</p>
+</section><section>
+<h1 id="post-1">POST</h1>
+<p>Rotina realizada por software/firmware na placa-mãe</p>
+<p>Sequência de  testes de hardware realizada pela <strong>BIOS</strong></p>
+<p><em>Sistema está operacional?</em></p>
+<p>Informação visual e sonora de resposta</p>
+</section><section>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/POST_P5KPL.jpg" alt=""></p>
+</section><section>
+<h1 id="procedimento-de-inicialização">Procedimento de inicialização</h1>
+<p>POST é o software que comanda a CPU</p>
+<p>Testes de barramento, memória, teclado, drives, vídeo</p>
+</section><section>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flow-diagram-computer-booting-sequences.jpg" alt="drawing" height="700"/>
+</section><section>
+<h1 id="bips">Bips</h1>
+<p>Variam de acordo com a placa mãe</p>
+<p><a href="https://findthingy.com/pc-computer-boot-bios-post-beep-codes/">Exemplos</a></p>
+</section><section>
+<h1 id="após-testes">Após testes</h1>
+<p>Passar controle da CPU para próximo programa</p>
+<p>Qual?</p>
+</section><section>
+<h1 id="ordem-de-boot">Ordem de boot</h1>
+<p>(Boot priority)</p>
+<p>Variável armazenada na CMOS ( que é memória volátil)</p>
+<p>Configurada pelo <strong>Setup</strong></p>
+<p>HD/SSD (sistema operacional instalado)</p>
+<p>Controle da CPU dado ao sistema operacional (exemplo)</p>
+</section><section>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Legacy_BIOS_boot_process.png/798px-Legacy_BIOS_boot_process.png" alt=""></p>
+</section><section>
+<p><img src="https://i1.wp.com/neosmart.net/wiki/wp-content/uploads/sites/5/2013/08/operating-system-not-found-missing.png?fit=980%2C536&amp;ssl=1" alt=""></p>
+</section><section>
+<h1 id="exemplos-de-post">Exemplos de post</h1>
+<p>(vários fabricantes)</p>
+</section><section>
+<h1 id="award-software">Award Software</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/2/23/Award_BIOS_first_screen.png" alt=""></p>
+</section><section>
+<h1 id="american-megatrends">American Megatrends</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/1/10/AMIBIOSIntel_CPU_uCode_Error.jpg" alt=""></p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="bios">BIOS</h1>
+<p><strong>B</strong>asic <strong>I</strong>nput <strong>O</strong>utput <strong>S</strong>ystem</p>
+<p>Firmware gravado em memória não volátil na placa-mãe</p>
+</section><section>
+<h1 id="função-básica">Função básica</h1>
+<p>Suporte básico ao hardware
+Inicialização do sistema operacional</p>
+</section><section>
+<h1 id="programas">Programas</h1>
+<ol>
+<li>
+<p>POST</p>
+</li>
+<li>
+<p>SETUP</p>
+</li>
+<li>
+<p>Ferramentas de diagnóstico</p>
+</li>
+</ol>
+</section><section>
+<h1 id="histórico">Histórico</h1>
+<p>Primeira BIOS era proprietária do IBM/PC</p>
+<p>Foi realizada a engenharia reversa para viabilizar os clones</p>
+<p>Popularização do software</p>
+</section><section>
+<h1 id="obs">OBS</h1>
+<p><em>Antigamente</em>&hellip;</p>
+<p>Fornecia a camada de abstração para teclado, monitor (e outros dispositivos de E/S) e o S.O..</p>
+<p>Hoje os SO modernos fazem chamadas diretas ao hadware (<strong>drivers</strong>)</p>
+</section><section>
+<h1 id="armazenada">Armazenada?</h1>
+<p>Antigamente em memórias ROM</p>
+<p>Atualmente, memórias flash</p>
+<p><strong>principal consequência?</strong></p>
+</section><section>
+<h1 id="atualização-de-bios">Atualização de Bios</h1>
+<p><a href="https://www.intel.com.br/content/www/br/pt/support/articles/000005724/boards-and-kits/desktop-boards.html">aqui</a></p>
+</section><section>
+<h1 id="clear-cmos">Clear CMOS</h1>
+<p>Valor das variáveis da BIOS guardada em uma memória volátil</p>
+<p>Como apagar configurações da BIOS?</p>
+<p>-&gt; Volta ao modo padrão de fábrica</p>
+<p>(estudaremos melhor junto com a placa-mãe)</p>
+<p><a href="https://dlcdnets.asus.com/pub/ASUS/mb/LGA1150/B85M-E/E9915_B85M-E_Manual_v3_web.pdf">Manual da placa</a></p>
+</section><section>
+<h1 id="jumper">Jumper</h1>
+<p><img src="https://supportkb.dell.com/img/ka02R000000bzCwQAI/ka02R000000bzCwQAI_pt_BR_5.jpeg" alt=""></p>
+</section><section>
+<h1 id="clear-cmos-1">Clear CMOS</h1>
+<p>Jumper</p>
+<p><img src="https://www.hardware.com.br/static/c/m/84213c5ae4837f52903897b299762197" alt=""></p>
+</section><section>
+<h1 id="clear-cmos-2">Clear CMOS</h1>
+<p>Curto</p>
+<p><img src="https://i.imgur.com/3PkT3Kh.jpg" alt=""></p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="setup">Setup</h1>
+<p>Visualizar e mudar variáveis (configurações)</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Award_BIOS_setup_utility.png" alt=""></p>
+</section><section>
+<h1 id="entrar-no-setup">Entrar no SETUP</h1>
+<p>Post ou manual da placa especifica qual tecla pressionar</p>
+<p>Mais utilizadas: del, f2, f8, f10, f12</p>
+</section><section>
+<h1 id="exemplo-de-configurações">Exemplo de configurações</h1>
+<ul>
+<li>Data,hora</li>
+<li>Ordem de boot</li>
+<li>Seleção de frequência de trabalho (memória, processador)</li>
+<li>Monitoramento de sensores</li>
+<li>Habilitação/Desabilitação de componentes de hardware</li>
+</ul>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="uefi">UEFI</h1>
+<p><img src="https://www.targethd.net/wp-content/uploads/2019/07/Screenshot-2019-07-26-at-18.51.34.jpg" alt=""></p>
+</section><section>
+<p><img src="https://s.glbimg.com/po/tt/f/original/2011/10/17/bios.jpg" alt=""></p>
+</section><section>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Uefi_logo.svg" alt=""></p>
+<p>Proposta de substituição da BIOS</p>
+<p>Fornecem <em>legacy support</em> para os serviços BIOS (retrocompatibilidade)</p>
+<p>Emulam o funcionamento da Bios (legacy mode)</p>
+</section><section>
+<h1 id="vantagens">Vantagens</h1>
+<ul>
+<li>Inicalização mais rápida (boot mais rápido)</li>
+<li>Arquitetura transparente ao processador</li>
+<li>Drivers genéricos
+<ul>
+<li>Ambiente pré-SO flexível (<strong>rede</strong>, mouse, etc)</li>
+<li>Acesso remoto</li>
+<li>Permite reparo/diagnóstico sem necessariamente usar um SO</li>
+</ul>
+</li>
+<li>Modo de segurança (secure boot)</li>
+<li>Fim da limitação de tamanho de discos (2TB)
+<ul>
+<li>GPT vs MBR - <strong>partições</strong> (próxima aula)</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<p><img src="https://blogjack.blob.core.windows.net/medias/2019/07/4_-bios_vs_uefi-1024x578.jpg" alt=""></p>
+
+</section>
+</section>
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/slides_bios/reveal-hugo/object-assign.js></script>
+
+<a href="/slides_bios/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"transition":"slide","transition_speed":"fast"}</script>
+
+<script src="/slides_bios/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/slides_bios/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/slides_bios/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/slides_bios/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/slides_bios/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/slides_bios/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>

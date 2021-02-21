@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Fontes</title>
+    <link>https://jp-guimaraes.github.io/slides_bios/home/</link>
+    <description>Recent content in Homes on Fontes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jp-guimaraes.github.io/slides_bios/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_bios/home/01_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_bios/home/01_intro/</guid>
+      <description> Objetivos Entender a sequência de inicialização do computador
+ Sumário  Sequencia de inicialização POST BIOS   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_bios/home/02_init/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_bios/home/02_init/</guid>
+      <description>Sequência de inicialização do computador  Troubleshooting  Energia na tomada Cabo de energia Equipamento entre o computador e a tomada  Desktop
+Laptop
+ Desktop  Fonte Botão ON/OFF Cabo botão ON/OFF Conector placa-mãe  Sínal de vídeo
+ Algoritmo  Usuário aperta o botão de power no gabinete  Curto (contato) entre os dois fios.
+ Algoritmo Placa-mãe processa entrada e manda mensagem  (conexão do painel frontal ao botão)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_bios/home/03_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_bios/home/03_post/</guid>
+      <description>POST Power-on self-test
+Auto teste de inicialização
+ POST Rotina realizada por software/firmware na placa-mãe
+Sequência de testes de hardware realizada pela BIOS
+Sistema está operacional?
+Informação visual e sonora de resposta
+  Procedimento de inicialização POST é o software que comanda a CPU
+Testes de barramento, memória, teclado, drives, vídeo
+  Bips Variam de acordo com a placa mãe
+Exemplos
+ Após testes Passar controle da CPU para próximo programa</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_bios/home/04_bios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_bios/home/04_bios/</guid>
+      <description>BIOS Basic Input Output System
+Firmware gravado em memória não volátil na placa-mãe
+ Função básica Suporte básico ao hardware Inicialização do sistema operacional
+ Programas   POST
+  SETUP
+  Ferramentas de diagnóstico
+   Histórico Primeira BIOS era proprietária do IBM/PC
+Foi realizada a engenharia reversa para viabilizar os clones
+Popularização do software
+ OBS Antigamente&amp;hellip;
+Fornecia a camada de abstração para teclado, monitor (e outros dispositivos de E/S) e o S.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_bios/home/05_setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_bios/home/05_setup/</guid>
+      <description> Setup Visualizar e mudar variáveis (configurações)
+ Entrar no SETUP Post ou manual da placa especifica qual tecla pressionar
+Mais utilizadas: del, f2, f8, f10, f12
+ Exemplo de configurações  Data,hora Ordem de boot Seleção de frequência de trabalho (memória, processador) Monitoramento de sensores Habilitação/Desabilitação de componentes de hardware   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_bios/home/06_uefi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_bios/home/06_uefi/</guid>
+      <description> UEFI   Proposta de substituição da BIOS
+Fornecem legacy support para os serviços BIOS (retrocompatibilidade)
+Emulam o funcionamento da Bios (legacy mode)
+ Vantagens  Inicalização mais rápida (boot mais rápido) Arquitetura transparente ao processador Drivers genéricos  Ambiente pré-SO flexível (rede, mouse, etc) Acesso remoto Permite reparo/diagnóstico sem necessariamente usar um SO   Modo de segurança (secure boot) Fim da limitação de tamanho de discos (2TB)  GPT vs MBR - partições (próxima aula)      </description>
+    </item>
+    
+  </channel>
+</rss>
