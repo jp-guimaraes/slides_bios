@@ -77,10 +77,12 @@ Fornecia a camada de abstração para teclado, monitor (e outros dispositivos de
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jp-guimaraes.github.io/slides_bios/home/05_setup/</guid>
-      <description> Setup Visualizar e mudar variáveis (configurações)
+      <description>Setup Visualizar e mudar variáveis (configurações)
  Entrar no SETUP Post ou manual da placa especifica qual tecla pressionar
 Mais utilizadas: del, f2, f8, f10, f12
- Exemplo de configurações  Data,hora Ordem de boot Seleção de frequência de trabalho (memória, processador) Monitoramento de sensores Habilitação/Desabilitação de componentes de hardware   </description>
+ Exemplo de configurações  Data,hora Ordem de boot Seleção de frequência de trabalho (memória, processador) Monitoramento de sensores Habilitação/Desabilitação de componentes de hardware   CMOS Semicondutor de Óxido Metálico Complementar
+(CMOS — Complementary metal-oxide-semiconductor)
+ Memória pequena que armazena as informações/variáveis do SETUP</description>
     </item>
     
     <item>
