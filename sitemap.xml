@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/01_intro/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/02_init/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/03_post/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/04_bios/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/05_setup/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/06_uefi/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/home/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://jp-guimaraes.github.io/slides_bios/tags/</loc>
   </url>
-  
 </urlset>
